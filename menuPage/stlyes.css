@@ -1,0 +1,132 @@
+body{
+    background-color: lightgray;
+    margin:0px;
+    font-family: 'PT Serif', serif;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+.top-menu{
+    display:flex;
+    justify-content: space-between;
+    padding: 38px;
+
+}
+
+.left-side{
+    display: flex;
+
+}
+
+.top-menu > .left-side > div{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.page-link{
+    height: 22px;
+    border-bottom:1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.page-link a{ 
+    color: #8a8a8a;
+    text-decoration:none ;
+    transition: color 0.5s;
+}
+.page-link:hover{
+    border-bottom: 1px solid black;
+}
+
+.page-link a:hover{
+    color: black;
+}
+
+.active-link{
+    border-bottom: 1px solid black;
+}
+.active-link a{
+
+    color: black !important;
+}
+/* portfolios */
+
+.portfolio-items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-right:100% ;
+    padding-left:40% ;
+}
+
+.logo-wrapper img{
+    width: 200%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtittle{
+    transition: 1s;
+    width: 100%;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtittle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(10%);
+
+}
+/*About page**/
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-image-wrapper img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+.profile-content{
+    padding:20px;
+
+}
+
+
+
+.profile-content h1{
+    color: lightseagreen;
+}
